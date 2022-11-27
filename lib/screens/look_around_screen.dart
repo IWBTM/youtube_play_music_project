@@ -21,6 +21,24 @@ class _LookAroundScreenState extends State<LookAroundScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title: Image.asset(
+          'assets/youtube_logo.png',
+          width: 90,
+        ),
+        actions: [
+          Icon(
+            Icons.live_tv,
+            color: Colors.white,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Icon(Icons.search_sharp, color: Colors.white),
+          ),
+          // TODO !!
+        ],
+      ),
       body: Column(
         children: [
           Expanded(
@@ -52,8 +70,10 @@ class _LookAroundScreenState extends State<LookAroundScreen> {
                   height: 280,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
-                    children: List.generate(newMusicVideo.length,
-                            (index) => AroundNewMusicVideo(video: newMusicVideo[index])),
+                    children: List.generate(
+                        newMusicVideo.length,
+                        (index) =>
+                            AroundNewMusicVideo(video: newMusicVideo[index])),
                   ),
                 ),
               ],

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music_play/components/album.dart';
+import 'package:youtube_music_play/components/popular_music_playlist_list.dart';
 import 'package:youtube_music_play/components/recommend_music_video_list.dart';
 import 'package:youtube_music_play/models/album.dart';
+import 'package:youtube_music_play/size.dart';
 
 import '../components/again_listen.dart';
 import '../components/album_mix_box_list.dart';
@@ -54,19 +56,19 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Kategorie(kategorie: '에너지 충전'),
                         SizedBox(
-                          width: 10,
+                          width: gap_s,
                         ),
                         Kategorie(kategorie: '운동'),
                         SizedBox(
-                          width: 10,
+                          width: gap_s,
                         ),
                         Kategorie(kategorie: '휴식'),
                         SizedBox(
-                          width: 10,
+                          width: gap_s,
                         ),
                         Kategorie(kategorie: '집중'),
                         SizedBox(
-                          width: 10,
+                          width: gap_s,
                         ),
                         Kategorie(kategorie: '출퇴근/등하교'),
                       ],
@@ -83,18 +85,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: List.generate(
                   againAlbums.length,
                   (index) => Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 13.0),
+                    padding: const EdgeInsets.symmetric(vertical: gap_s),
                     child: Albums(album: againAlbums[index]),
                   ),
                 ),
               ),
             ),
             SizedBox(
-              height: 25,
+              height: gap_l,
             ),
             FastFirstSongTitle(),
             SizedBox(
-              height: 13,
+              height: gap_s,
             ),
             Container(
               height: 310,
@@ -107,25 +109,25 @@ class _HomeScreenState extends State<HomeScreen> {
                         album: albums['firstAlbums'],
                       ),
                       SizedBox(
-                        width: 14,
+                        width: gap_s,
                       ),
                       FastFirstSportsSongList(
                         album: albums['secondAlbums'],
                       ),
                       SizedBox(
-                        width: 14,
+                        width: gap_s,
                       ),
                       FastFirstSportsSongList(
                         album: albums['thirdAlbums'],
                       ),
                       SizedBox(
-                        width: 14,
+                        width: gap_s,
                       ),
                       FastFirstSportsSongList(
                         album: albums['fourthAlbums'],
                       ),
                       SizedBox(
-                        width: 14,
+                        width: gap_s,
                       ),
                       FastFirstSportsSongList(
                         album: albums['fifthAlbums'],
@@ -135,8 +137,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+            SizedBox(height: gap_xl,),
             AlbumMixBoxList(),
-            RecommendMusicVideoList()
+            RecommendMusicVideoList(),
+            SizedBox(height: gap_xl,),
+                      PopularMusicPlaylistList()
           ],
         ),
       ),
