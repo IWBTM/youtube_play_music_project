@@ -3,7 +3,7 @@ class Album {
   var albumImg;
   var title;
 
-  Album({this.albumImg, this.title, this.author});
+  Album({required  this.albumImg, required this.title, this.author});
 }
 
 List<Album> againAlbums = [
@@ -20,15 +20,15 @@ List<Album> againAlbums = [
 
 Map<String, List<Album>> albums = {
   'firstAlbums': [
-    Album(albumImg: 'assets/album1.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album2.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album3.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album4.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album5.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album6.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album7.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album8.jpg', title: '노트북', author: '지코'),
-    Album(albumImg: 'assets/album9.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album01.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album02.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album03.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album04.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album05.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album06.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album07.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album08.jpg', title: '노트북', author: '지코'),
+    Album(albumImg: 'assets/album09.jpg', title: '노트북', author: '지코'),
   ],
   'secondAlbums': [
     Album(albumImg: 'assets/album11.jpg', title: '노트북', author: '지코'),
@@ -73,3 +73,33 @@ Map<String, List<Album>> albums = {
     Album(albumImg: 'assets/album48.jpg', title: '노트북', author: '지코'),
     Album(albumImg: 'assets/album49.jpg', title: '노트북', author: '지코'),]
 };
+
+
+List<Album> albums1 = [
+
+  Album(albumImg: "assets/album13.jpg", title: "다정히 내 이름을 부르면"),
+  Album(albumImg: "assets/album27.jpg", title: "신호등"),
+  Album(albumImg: "assets/album01.jpg", title: "노래1"),
+  Album(albumImg: "assets/album02.jpg", title: "노래2"),
+  Album(albumImg: "assets/album03.jpg", title: "노래3"),
+  Album(albumImg: "assets/album04.jpg", title: "노래4"),
+  Album(albumImg: "assets/album05.jpg", title: "노래5"),
+  Album(albumImg: "assets/album06.jpg", title: "노래6"),
+  Album(albumImg: "assets/album07.jpg", title: "노래7"),
+  Album(albumImg: "assets/album08.jpg", title: "노래8"),
+  Album(albumImg: "assets/album09.jpg", title: "노래9"),
+  Album(albumImg: "assets/album10.jpg", title: "노래10"),
+  Album(albumImg: "assets/album11.jpg", title: "노래11"),
+  Album(albumImg: "assets/album12.jpg", title: "노래12"),
+  Album(albumImg: "assets/album13.jpg", title: "노래13"),
+  Album(albumImg: "assets/album14.jpg", title: "노래14"),
+  Album(albumImg: "assets/album15.jpg", title: "노래15"),
+  Album(albumImg: "assets/album16.jpg", title: "노래16"),
+  Album(albumImg: "assets/album17.jpg", title: "노래17"),
+  Album(albumImg: "assets/album18.jpg", title: "노래18"),
+  Album(albumImg: "assets/album19.jpg", title: "노래19"),
+  Album(albumImg: "assets/album20.jpg", title: "노래20"),
+  Album(albumImg: "assets/album21.jpg", title: "노래21"),
+  Album(albumImg: "assets/album22.jpg", title: "노래21"),
+
+];
