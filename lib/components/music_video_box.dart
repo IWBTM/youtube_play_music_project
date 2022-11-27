@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music_play/models/music_video.dart';
+import 'package:youtube_music_play/size.dart';
 
 class MusicVideoBox extends StatelessWidget {
   MusicVideoBox({Key? key, required this.musicVideo}) : super(key: key);
@@ -13,12 +14,15 @@ class MusicVideoBox extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(
-            musicVideo.img,
-            fit: BoxFit.fitWidth,
-            width: 280,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(gap_s),
+            child: Image.asset(
+              musicVideo.img,
+              fit: BoxFit.fitWidth,
+              width: 280,
+            ),
           ),
-          SizedBox(height: 5,),
+          SizedBox(height: gap_xs,),
           Text(
             musicVideo.title,
             style: TextStyle(color: Colors.white),

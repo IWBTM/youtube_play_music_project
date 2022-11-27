@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music_play/size.dart';
 
 class Kategorie extends StatelessWidget {
   const Kategorie({Key? key, required this.kategorie}) : super(key: key);
@@ -22,7 +23,7 @@ class Kategorie extends StatelessWidget {
         child: Center(
           child: Text(
             kategorie,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.white, fontSize: 16),
           ),
         ),
       ),

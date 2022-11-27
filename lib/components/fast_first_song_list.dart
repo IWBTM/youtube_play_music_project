@@ -9,7 +9,7 @@ class FastFirstSportsSongList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 310,
+      height: 300,
       width: 380,
       child: Column(
         children: List.generate(

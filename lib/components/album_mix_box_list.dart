@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music_play/components/album_mix_box.dart';
 import 'package:youtube_music_play/models/mix_album.dart';
+import 'package:youtube_music_play/size.dart';
 
-import 'my_mix_title.dart';
+import 'my_title.dart';
+
 
 class AlbumMixBoxList extends StatelessWidget {
   const AlbumMixBoxList({Key? key}) : super(key: key);
@@ -11,12 +13,12 @@ class AlbumMixBoxList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        MyMixTitle(),
+        MyTitle(text: '맞춤 믹스',),
         SizedBox(
           height: 25,
         ),
         Container(
-          height: 300,
+          height: containerHeight,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [

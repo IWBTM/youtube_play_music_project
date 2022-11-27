@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music_play/components/album.dart';
+import 'package:youtube_music_play/components/go_to_dream_world_list.dart';
 import 'package:youtube_music_play/components/popular_music_playlist_list.dart';
 import 'package:youtube_music_play/components/recommend_music_video_list.dart';
 import 'package:youtube_music_play/models/album.dart';
@@ -48,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               height: 100,
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10.0),
+                padding: const EdgeInsets.symmetric(vertical: gap_s),
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -137,11 +138,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            SizedBox(height: gap_xl,),
+            SizedBox(
+              height: gap_xl,
+            ),
             AlbumMixBoxList(),
             RecommendMusicVideoList(),
-            SizedBox(height: gap_xl,),
-                      PopularMusicPlaylistList()
+            PopularMusicPlaylistList(),
+            GoToDreamWorldList(),
           ],
         ),
       ),

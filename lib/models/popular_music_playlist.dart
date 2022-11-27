@@ -43,5 +43,37 @@ List<PopularMusicPlayList> popularMusicPlayListSample = [
             albumImg: 'assets/album32.png',
             title: '대충 임한별 노래',
             author: '대충 임한별'),
-      ])
+      ]),
+  PopularMusicPlayList(
+      image: 'assets/비트 온.png',
+      title: '비트 온: 인기 국내 힙합/랩',
+      authors: 'BEO (비오), 릴러말즈(Leellamarz), 오반, pH-1',
+      albums: [
+        Album(
+            albumImg: 'assets/album24.png', title: '대충 비오 노래', author: '대충 비오'),
+        Album(
+            albumImg: 'assets/album23.png',
+            title: '대충 릴러말즈 노래',
+            author: '대충 릴러말즈'),
+        Album(
+            albumImg: 'assets/album22.png', title: '대충 오반 노래', author: '대충 오반'),
+      ]),
+  PopularMusicPlayList(
+      image: 'assets/스웨그 온.png',
+      title: '스웨그 온: 인기 국내 댄스',
+      authors: 'aespa, BLACKPINK, 스테이씨, BTS(방탄소년단)',
+      albums: [
+        Album(
+            albumImg: 'assets/album14.png',
+            title: '대충 애스파 노래',
+            author: '대충 애스파'),
+        Album(
+            albumImg: 'assets/album13.png',
+            title: '대충 블랙핑크 노래',
+            author: '대충 블랙핑크'),
+        Album(
+            albumImg: 'assets/album12.png',
+            title: '대충 스테이씨 노래',
+            author: '대충 스테이씨'),
+      ]),
 ];

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:youtube_music_play/models/album.dart';
 import 'package:youtube_music_play/screens/album_screen.dart';
+import 'package:youtube_music_play/size.dart';
 
 class FastFirstSongCard extends StatelessWidget {
   const FastFirstSongCard({Key? key, required this.album}) : super(key: key);
@@ -22,14 +24,14 @@ class FastFirstSongCard extends StatelessWidget {
         );
       },
       child: ListTile(
-        leading: CircleAvatar(
-          radius: 30,
+        leading: ClipRRect(
+          borderRadius: BorderRadius.circular(gap_s),
           child: Image.asset(album.albumImg),
         ),
         title: Text(
           album.title,
           style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18),
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: gap_m),
         ),
         subtitle: Text(
           album.author,
@@ -37,7 +39,7 @@ class FastFirstSongCard extends StatelessWidget {
               color: Color.fromRGBO(255, 255, 255, 1.3), fontSize: 15),
         ),
         trailing: Icon(
-          Icons.scatter_plot_sharp,
+          FontAwesomeIcons.ellipsisVertical,
           color: Colors.white,
         ),
       ),
