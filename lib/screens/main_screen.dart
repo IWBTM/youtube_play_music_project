@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:youtube_music_play/screens/album.dart';
 import 'package:youtube_music_play/screens/home_screen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:youtube_music_play/screens/look_around_screen.dart';
 import 'package:youtube_music_play/screens/repository.dart';
 
 import '../screens/play_lsit.dart';
@@ -22,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
         index: _selectedIndex,
         children: [
           HomeScreen(), // 경민
-          PlayList(), // 보경이 메인페이지
+          LookAroundScreen(), // 보경이 메인페이지
           Repository(),// 지훈 메인페이지
         ],
       ),
