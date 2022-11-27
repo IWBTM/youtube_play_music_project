@@ -4,7 +4,7 @@
             "outputFile": "com.example.youtube_music_play.app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\youtube_play_music_project\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\android\\flutter_work\\youtube_music_play\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
