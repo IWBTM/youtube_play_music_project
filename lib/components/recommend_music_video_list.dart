@@ -14,6 +14,7 @@ class _RecommendMusicVideoListState extends State<RecommendMusicVideoList> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           '추천 뮤직 비디오',

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_music_play/components/album.dart';
+import 'package:youtube_music_play/components/popular_music_playlist_list.dart';
 import 'package:youtube_music_play/components/recommend_music_video_list.dart';
 import 'package:youtube_music_play/models/album.dart';
 
@@ -135,8 +136,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+            SizedBox(height: 40,),
             AlbumMixBoxList(),
-            RecommendMusicVideoList()
+            RecommendMusicVideoList(),
+            SizedBox(height: 40,),
+                      PopularMusicPlaylistList()
           ],
         ),
       ),
