@@ -36,7 +36,7 @@ class Albums extends StatelessWidget {
               ),
               Text(
                 album.title,
-                style: TextStyle(color: Colors.white, fontSize: 15),
+                style: TextStyle(color: Colors.white, fontSize: 13),
               ),
             ],
           ),
