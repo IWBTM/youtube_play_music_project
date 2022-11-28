@@ -77,10 +77,10 @@ Map<String, List<Album>> albums = {
 
 List<Album> albums1 = [
 
-  Album(albumImg: "assets/album13.jpg", title: "다정히 내 이름을 부르면"),
-  Album(albumImg: "assets/album27.jpg", title: "신호등"),
-  Album(albumImg: "assets/album01.jpg", title: "노래1"),
-  Album(albumImg: "assets/album02.jpg", title: "노래2"),
+  Album(albumImg: "assets/album13.jpg", title: "다정히 내 이름을 부르면", author: '경서/예지'),
+  Album(albumImg: "assets/album27.jpg", title: "신호등", author: '이무진'),
+  Album(albumImg: "assets/album01.jpg", title: "노래1", author: '가수'),
+  Album(albumImg: "assets/album02.jpg", title: "노래2", author: '가수'),
   Album(albumImg: "assets/album03.jpg", title: "노래3"),
   Album(albumImg: "assets/album04.jpg", title: "노래4"),
   Album(albumImg: "assets/album05.jpg", title: "노래5"),

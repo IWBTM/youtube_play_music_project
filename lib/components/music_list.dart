@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_music_play/screens/album_screen.dart';
 
 import '../models/album.dart';
 
@@ -15,7 +16,6 @@ class _MusicListState extends State<MusicList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -33,10 +33,13 @@ class _MusicListState extends State<MusicList> {
   Widget _buildMusicItem(var itemNum) {
     return InkWell(
       onTap: () {
-        print(" ${albums1[itemNum].title} 눌러짐" );
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return AlbumScreen(album: albums1[itemNum]);
+        },));
       },
       child: Padding(
-        padding: const EdgeInsets.only(left: 15, right: 10, top: 15, bottom: 15),
+        padding:
+            const EdgeInsets.only(left: 15, right: 10, top: 15, bottom: 15),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -64,7 +67,10 @@ class _MusicListState extends State<MusicList> {
               width: 150,
               child: Text(
                 albums1[itemNum].title,
-                style: TextStyle(fontSize: 12, color: Colors.white,fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold),
               ),
             )
           ],
